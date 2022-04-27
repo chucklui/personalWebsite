@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <title>Cheuk's Personal Page!</title>
 </head>
 <body>
@@ -19,13 +21,13 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About Me</a>
+                        <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#funfacts" class="nav-link">Fun Facts</a>
+                        <a href="#work" class="nav-link">Work</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -35,17 +37,10 @@
         </div>
     </nav>
 
-    <section class="bg-dark text-light p-5 text-center">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <div>
-                    <h1>Aspiring Web Developer</h1>
-                    <p>{...web page working in progress}</p>
-                </div>
-                <img class="img-fluid w-50 ms-auto"
-                    src="https://www.simplilearn.com/ice9/free_resources_article_thumb/full_front_back.jpg"
-                    alt="picture of aspiring web developer">
-            </div>
+    <section class="home bg-dark text-light p-5 text-center">
+        <div class="container d-flex justify-content-center align-items-center">
+            <h1>Aspiring Web Developer</h1>
+            <p>{...web page working in progress}</p>
         </div>
     </section>
 
@@ -63,7 +58,7 @@
                         recusandae nisi quaerat consequatur quis sed dolorem omnis, numquam obcaecati similique
                         necessitatibus, qui minima? Neque, animi distinctio?
                     </p>
-                    <a href="https://github.com/chucklui/resume/blob/ea62c9526e172f3aba74f59469094955a982892b/SWE_Cheuk_Ho_Lui_Resume.pdf" 
+                    <a href="./Rithm Resume-Chuck Lui.pdf" target="_blank" rel="noopener noreferrer" 
                         class="btn btn-dark">
                         Resume</a>
                 </div>
@@ -71,11 +66,11 @@
         </div>
     </section>
 
-    <section id="funfacts" class="bg-dark text-light p-5 text-center">
+    <!-- <section id="work" class="bg-dark text-light p-5 text-center">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5">
-                    <h1 class="lead">Fun Facts =D</h1>
+                    <h1 class="lead">Werk</h1>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam maiores sunt cumque excepturi
                         recusandae nisi quaerat consequatur quis sed dolorem omnis, numquam obcaecati similique
@@ -90,32 +85,107 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section id="work">
+        <div id="carouselExampleCaptions" class="carousel slide bg-dark text-light p-5 text-center" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item p-5 active">
+                <div class="row p-5">
+                    <div class="col-8">
+                        <img src="./Editable-Rainbow-Chart.png" class="w-100" alt="...">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <div class="description">
+                            <h1>Company Project</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item p-5">
+                <div class="row p-5">
+                    <div class="col-8">
+                        <img src="./Warbler.png" class="w-100" alt="Warbler">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <div class="description">
+                            <h1>Company Project</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item p-5">
+                <div class="row p-5">
+                    <div class="col-8">
+                        <img src="..." class="w-100" alt="Jobly">
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <h5>First slide label</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="carousel-item p-5">
+                <img src="./Screen Shot 2022-04-12 at 10.42.19 PM.png" class="d-block w-50" alt="...">
+                <div class="d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item p-5">
+                <img src="./Screen Shot 2022-04-12 at 10.44.15 PM.png" class="d-block w-50" alt="...">
+                <div class="d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div> -->
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
     </section>
 
-    <section id="contact" class="p-5 text-center">
-        <div class="container">
-            <h2>Contact Info:</h2>
-            <ul class="list-group list-group-flush lead">
-                <li class="list-group-item">
-                    <a href="https://www.linkedin.com/in/cheukholui" target="_blank"><span class="fw-bold">Linkedln</span></a>
-                </li>
-                <li class="list-group-item">
-                    <a class="cta" href="mailto:luialex0@gmail.com" target="_blank"><span class="fw-bold">Email</span></a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://www.github.com/chucklui" target="_blank"><span class="fw-bold">Github</span></a>
-                </li>
-            </ul>
-        </div>
+    <section id="contact" class="pb-5 pr-5 pl-5 pt-5 text-center">
+        <h1 class="lead pb-3">Contact Info:</h1>
+        <div class="container d-flex justify-content-around">
+            <div class="list-item">
+                <a href="https://www.linkedin.com/in/cheukholui" target="_blank"><span class="fw-bold lead">Linkedln</span></a>
+            </div>
+            <div class="list-item">
+                <a class="cta" href="mailto:luialex0@gmail.com" target="_blank"><span class="fw-bold lead">Email</span></a>
+            </div>
+            <div class="list-item">
+                <a href="https://www.github.com/chucklui" target="_blank"><span class="fw-bold lead">Github</span></a>
+            </div>
         </div>
     </section>
+    
     <footer class="p-5 bg-dark text-light text-center">
         <div class="container">
             <p class="lead mb-0">Copyright &copy; 2022 Cheuk's Personal Page</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
         crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    </body>
 </html>
