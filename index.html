@@ -8,13 +8,14 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
         crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Cheuk's Personal Page!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Cheuk Ho Lui's Personal Page!</title>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand">Cheuk's Personal Page</a>
+            <a href="#" class="navbar-brand">Cheuk Ho Lui's Personal Page</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,9 +39,14 @@
     </nav>
 
     <section class="home bg-dark text-light p-5 text-center">
-        <div class="container d-flex justify-content-center align-items-center">
-            <h1>Aspiring Web Developer</h1>
-            <p>{...web page working in progress}</p>
+        <div class="container d-flex align-items-center justify-content-center">
+            <div>
+                <h1 class="landing">Welcome to my personal website!</h1>
+                <hr>
+                <h2>I'm Cheuk Ho Lui,</h2>
+                <p>a full-stack engineer based in San Francisco, California.</p>
+                <br/>
+            </div>
         </div>
     </section>
 
@@ -54,38 +60,20 @@
                 <div class="col-md p-5">
                     <h1 class="lead">About Me</h1>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam maiores sunt cumque excepturi
-                        recusandae nisi quaerat consequatur quis sed dolorem omnis, numquam obcaecati similique
-                        necessitatibus, qui minima? Neque, animi distinctio?
+                        I am a software engineer based out in San Francisco, California. 
+                        Prior of switching career, I was in Biotech industry and was heavily involve in stem cells.
+                        I decided to make a life changing decision when I pick back up my long gone interest of computer science.
+                        So far, I'm enjoying the process of learning new languages and modern technologies and continue to expand my stack.
                     </p>
-                    <a href="./Rithm Resume-Chuck Lui.pdf" target="_blank" rel="noopener noreferrer" 
+                    <br/>
+                    <p>I have attended Rithm School's full-stack web development program. I have experience in JavaScript, Python, Flask, Django, Express and React.</p>
+                    <a href="https://github.com/chucklui/resume/raw/main/Cheuk_Ho_Lui_Resume.pdf" rel="noopener noreferrer" 
                         class="btn btn-dark">
                         Resume</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- <section id="work" class="bg-dark text-light p-5 text-center">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <h1 class="lead">Werk</h1>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam maiores sunt cumque excepturi
-                        recusandae nisi quaerat consequatur quis sed dolorem omnis, numquam obcaecati similique
-                        necessitatibus, qui minima? Neque, animi distinctio?
-                    </p>
-                </div>
-                <div class="col-md">
-                    <img src="./img/76076460-8ad5-4523-a068-c6160deb77ff_hong-kong-flag.jpeg"
-                        class="img-fluid ms-auto mb-5" alt="picture of HK flag">
-                    <img src="./img/76076460-8ad5-4523-a068-c6160deb77ff_Nba-Bubble-1.jpeg" class="img-fluid ms-auto"
-                        alt="picture of NBA">
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section id="work">
         <div id="carouselExampleCaptions" class="carousel slide bg-dark text-light p-5 text-center" data-bs-ride="carousel">
@@ -104,7 +92,10 @@
                     <div class="col d-flex align-items-center justify-content-center">
                         <div class="description">
                             <h1>Company Project</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>The Student Information System is a web system to manage classes and their associated lectures, assessments, etc. 
+                                The system is built with Django as backend framework and uses PostgreSQL to manage it's database data. 
+                                During my intern, me and my partner helped implement an editable rainbow chart feature in SIS for the ease of staff to make changes to cohort items on the same page. 
+                                In addition, we updated Django files and include a date library to allow API endpoints to accept appropriate data when updating rainbow chart via AJAX.</p>
                         </div>
                     </div>
                 </div>
@@ -116,8 +107,15 @@
                     </div>
                     <div class="col d-flex align-items-center justify-content-center">
                         <div class="description">
-                            <h1>Company Project</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <h1>Warbler</h1>
+                            <p>Warbler is a mock-twitter clone application built with backend framework Flask and Jinjia.
+                                PostgreSQL is used to store the data and SQLAlchemy to manage database relationship.
+                                This app is similar to Twitter where users can signup/login and make "warbles".
+                                It also include authentication/authorization where bcrypt and session are being used to
+                                verify and store user information. Tests are also written for the views and unittest for the backend.
+                            </p>
+                            <a href="https://twitterclone-chuck.herokuapp.com/" target="_blank"><i class="bi bi-window"></i></a>
+                            <a href="https://github.com/chucklui/flask_warbler" target="_blank"><i class="bi bi-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -125,27 +123,23 @@
             <div class="carousel-item p-5">
                 <div class="row p-5">
                     <div class="col-8">
-                        <img src="..." class="w-100" alt="Jobly">
+                        <img src="./Jobly.png" class="w-100" alt="Jobly">
                     </div>
                     <div class="col d-flex align-items-center justify-content-center">
-                        <h5>First slide label</h5>
+                        <div class="description">
+                            <h1>Jobly</h1>
+                            <p>Jobly is a mock-job board searching application.
+                                It is build with React in the front-end and Express in the back-end.
+                                PostgreSQL and SQLAlchemy are also being used to store data and maange the db relationship.
+                                Users can signup/login via bcrypt password and JsonWebToken to verify the user. 
+                                Testing were implemented by Jest for unit testing and integration testing. 
+                            </p>
+                            <a href="http://chucklui-jobly.surge.sh" target="_blank"><i class="bi bi-window"></i></a>
+                            <a href="https://github.com/chucklui/fullstack-jobly" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- <div class="carousel-item p-5">
-                <img src="./Screen Shot 2022-04-12 at 10.42.19 PM.png" class="d-block w-50" alt="...">
-                <div class="d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item p-5">
-                <img src="./Screen Shot 2022-04-12 at 10.44.15 PM.png" class="d-block w-50" alt="...">
-                <div class="d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div> -->
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

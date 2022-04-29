@@ -18,6 +18,12 @@
     height: 500px;
 }
 
-.carousel-inner img {
+.carousel-inner img,
+#about img {
     border-radius: 5px;
+}
+
+.bi {
+    font-size: 25px;
+    margin: 0.5rem;
 }
